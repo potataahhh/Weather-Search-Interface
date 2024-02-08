@@ -1,0 +1,96 @@
+:root {
+    --main-color: #3E54AC;
+    --white-color: #ffff;
+    --alt-color: #3795BD;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--alt-color);
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 20px;
+    font-size: 2rem;
+}
+
+#weather-title {
+    color: #FDD020;
+}
+
+#title img {
+    width: 90px;
+}
+
+#search-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#search:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    max-width: 300px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    display: none;
+    padding: 2rem;
+    margin: 4rem auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.city-name {
+    font-size: 3rem;
+    color: #FDD020;
+}
+
+.weather-name {
+    font-size: 2.5rem;
+}
+
+.temperature {
+    font-size: 2rem;
+}
+
+.humidity {
+    font-size: 2rem;
+}
+
+.feels-like {
+    font-size: 2rem;
+}
